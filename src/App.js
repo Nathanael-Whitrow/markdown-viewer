@@ -1,25 +1,60 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
-function App() {
+function TextArea(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Padding">
+      <textarea
+        className="TextBox"
+        id="editor"
+        value={props.content}
+        onChange={props.callback}
+      />
     </div>
   );
+}
+
+function Converter() {
+  return (
+    <div></div>
+  )
+}
+
+function PreviewArea(props) {
+  return (
+    <div className="Padding">
+      <span className="PreviewArea">{props.content}</span>
+    </div>
+  );
+}
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      markup: "Enter your markup here...",
+    }
+
+    this.handleChange = this.handleChange.bind(this);
+  };
+
+  handleChange(event) {
+    this.setState({ markup: event.target.value })
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+        <TextArea
+          content={this.state.markup}
+          callback={this.handleChange}
+        />
+        <Converter />
+        <PreviewArea content={this.state.markup} />
+      </div>
+    );
+  };
 }
 
 export default App;
