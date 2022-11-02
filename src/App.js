@@ -22,7 +22,7 @@ function Converter() {
 
 function PreviewArea(props) {
   return (
-    <div className="Padding">
+    <div className="Padding" id="preview">
       <span className="PreviewArea">{props.content}</span>
     </div>
   );
