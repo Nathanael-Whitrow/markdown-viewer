@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 function TextArea(props) {
   return (
@@ -22,8 +23,8 @@ function Converter() {
 
 function PreviewArea(props) {
   return (
-    <div className="Padding" id="preview">
-      <span className="PreviewArea">{props.content}</span>
+    <div className="Padding PreviewArea" id="preview">
+      <ReactMarkdown children={props.markdown} />
     </div>
   );
 }
@@ -32,14 +33,14 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      markup: "Enter your markup here...",
+      markdown: "",
     }
 
     this.handleChange = this.handleChange.bind(this);
   };
 
   handleChange(event) {
-    this.setState({ markup: event.target.value })
+    this.setState({ markdown: event.target.value, })
   }
 
   render() {
@@ -47,11 +48,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <TextArea
-          content={this.state.markup}
+          content={this.state.markdown}
           callback={this.handleChange}
         />
         <Converter />
-        <PreviewArea content={this.state.markup} />
+        <PreviewArea markdown={this.state.markdown} />
       </div>
     );
   };
