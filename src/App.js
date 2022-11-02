@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { marks } from './initial.js';
 
 function TextArea(props) {
   return (
@@ -38,6 +39,10 @@ class App extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
   };
+
+  componentDidMount() {
+    this.setState({ markdown: marks })
+  }
 
   handleChange(event) {
     this.setState({ markdown: event.target.value, })
