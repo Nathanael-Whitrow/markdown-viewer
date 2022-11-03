@@ -1,5 +1,4 @@
-export const marks = `
-# Welcome to my React Markdown Previewer!
+export const marks = `# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
 ### And here's some other cool stuff:

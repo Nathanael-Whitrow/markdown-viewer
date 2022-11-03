@@ -1,12 +1,15 @@
 import './App.css';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { marks } from './initial.js';
 
 function TextArea(props) {
   return (
     <div className="Padding">
       <textarea
+        rows="10"
+        cols="80"
         className="TextBox"
         id="editor"
         value={props.content}
@@ -16,16 +19,10 @@ function TextArea(props) {
   );
 }
 
-function Converter() {
-  return (
-    <div></div>
-  )
-}
-
 function PreviewArea(props) {
   return (
     <div className="Padding PreviewArea" id="preview">
-      <ReactMarkdown children={props.markdown} />
+      <ReactMarkdown children={props.markdown} remarkPlugins={[remarkGfm]} />
     </div>
   );
 }
@@ -56,7 +53,6 @@ class App extends React.Component {
           content={this.state.markdown}
           callback={this.handleChange}
         />
-        <Converter />
         <PreviewArea markdown={this.state.markdown} />
       </div>
     );
