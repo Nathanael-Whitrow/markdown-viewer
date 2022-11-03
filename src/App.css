@@ -18,6 +18,8 @@ body {
 .TextBox {
   background-color: var(--light-tan);
   border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 750px;
 }
 
 .PreviewArea {
@@ -52,4 +54,5 @@ pre {
   background-color: var(--cream);
   border-radius: 3px;
   border: 1px solid var(--border-color);
+  overflow-x: scroll;
 }
