@@ -18,7 +18,7 @@ body {
 .TextBox {
   background-color: var(--light-tan);
   border: 1px solid var(--border-color);
-  width: 100%;
+  width: 95%;
   max-width: 750px;
 }
 
