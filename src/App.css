@@ -56,3 +56,11 @@ pre {
   border: 1px solid var(--border-color);
   overflow-x: scroll;
 }
+
+table,
+th,
+td {
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+  padding: 5px;
+}
