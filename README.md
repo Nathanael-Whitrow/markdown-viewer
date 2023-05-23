@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Markdown Viewer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The Markdown Viewer is a user-friendly, web-based application that renders Markdown files into a beautifully formatted display. Built using JavaScript and React.js, it allows you to upload your Markdown and instantly preview them in their fully rendered form, directly in your browser.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To use the Markdown Viewer in your browser right now click [here](https://nathanael-whitrow.github.io/markdown-viewer/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The following instructions will get the project up and running on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Before you begin, ensure you have met the following requirements:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/).
+- You have a basic understanding of JavaScript and React.js.
 
-### `npm run build`
+### Installing and Running the App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install and run the Markdown Viewer app, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```
+    git clone https://github.com/Nathanael-Whitrow/markdown-viewer.git
+    ```
 
-### `npm run eject`
+2. **Navigate into the directory**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```
+    cd markdown-viewer
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Install dependencies**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Run the application**
 
-## Learn More
+    ```
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After these steps, open http://localhost:3000/markdown-viewer in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+I love contributions from my users! If you would like to contribute to React Calculator App, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository.
+2. Create a branch with your feature or bug fix.
+3. Commit your changes.
+4. Push to the branch on your fork.
+5. Submit a pull request to the main repository.
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you want to contact the maintainer of the project, you can reach out at `<nathanael.whitrow@gmail.com>`.
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This Markdown Viewer wouldn't be possible without the awesome open-source work of others. To the creators of React.js and each package this project depends on, thank you for making this possible.
